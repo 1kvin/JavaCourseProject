@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="CourseClient.Models.Editor.PeopleEditor"
+             Title="Редактирование">
+    <ContentPage.Content>
+        <StackLayout Padding="10,10,10,0">
+            <Label Text="Имя"></Label>
+            <Entry x:Name="FirstNameField" Text="" MaxLength="20"></Entry>
+            <Label Text="Фамилия"></Label>
+            <Entry x:Name="LastNameField" Text="" MaxLength="20"></Entry>
+            <Label Text="Патчер"></Label>
+            <Entry x:Name="PatherNameField" Text="" MaxLength="20"></Entry>
+            <Label x:Name="GroupLabel" Text="Группа"></Label>
+            <Picker x:Name="GroupPicker" ItemDisplayBinding="{Binding name}"></Picker>
+            <Button x:Name="SaveButton" Text="Сохранить" Clicked="SaveButton_Clicked"></Button>
+            <Button x:Name="DeleteButton" Text="Удалить" Clicked="DeleteButton_Clicked" BackgroundColor="Red"></Button>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

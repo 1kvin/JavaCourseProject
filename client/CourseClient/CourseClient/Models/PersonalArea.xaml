@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="CourseClient.PersonalArea"
+             Title="Личный кабинет">
+    <ContentPage.Content>
+        <StackLayout Padding="10,10,10,10">
+
+
+            <Label x:Name="welcomeLabel" FontSize="Large"/>
+            <Button x:Name="showAllStudentButton" Text="Показать всех студентов" Clicked="ShowAllStudentButton_Clicked"></Button>
+            <Button x:Name="showAllTeacherButton" Text="Показать всех преподавателей" Clicked="ShowAllTeacherButton_Clicked"></Button>
+            <Button x:Name="showAllGroupsButton" Text="Показать все группы" Clicked="ShowAllGroupsButton_Clicked"></Button>
+            <Button x:Name="showAllMarks" Text="Показать оценки" Clicked="ShowAllMarks_Clicked"></Button>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

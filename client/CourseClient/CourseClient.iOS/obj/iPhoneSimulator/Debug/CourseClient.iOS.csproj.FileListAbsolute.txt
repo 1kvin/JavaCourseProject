@@ -1,0 +1,7 @@
+C:\Users\kvin2\source\repos\CourseClient\CourseClient\CourseClient.iOS\obj\iPhoneSimulator\Debug\ibtool\_BundleResourceWithLogicalName.items
+C:\Users\kvin2\source\repos\CourseClient\CourseClient\CourseClient.iOS\obj\iPhoneSimulator\Debug\actool\_PartialAppManifest.items
+C:\Users\kvin2\source\repos\CourseClient\CourseClient\CourseClient.iOS\obj\iPhoneSimulator\Debug\actool\_BundleResourceWithLogicalName.items
+C:\Users\kvin2\source\repos\CourseClient\CourseClient\CourseClient.iOS\obj\iPhoneSimulator\Debug\coremlc\_PartialAppManifest.items
+C:\Users\kvin2\source\repos\CourseClient\CourseClient\CourseClient.iOS\obj\iPhoneSimulator\Debug\coremlc\_BundleResourceWithLogicalName.items
+C:\Users\kvin2\source\repos\CourseClient\CourseClient\CourseClient.iOS\obj\iPhoneSimulator\Debug\optimized\
+C:\Users\kvin2\source\repos\CourseClient\CourseClient\CourseClient.iOS\obj\iPhoneSimulator\Debug\CourseClient.iOS.csprojAssemblyReference.cache

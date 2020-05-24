@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="CourseClient.MarkViewer"
+             Title="Просмотр">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Добавить"
+                 IconImageSource="example_icon.png"
+                 Order="Primary"
+                 Priority="0" 
+                 Clicked="ToolbarItem_Clicked"/>
+    </ContentPage.ToolbarItems>
+    <StackLayout>
+        <ListView x:Name="MyListView"
+                  HasUnevenRows="True"
+                  ItemsSource="{Binding MarksList}"
+                  ItemTapped="Handle_ItemTapped"
+                  CachingStrategy="RecycleElement">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <ViewCell.View>
+                            <StackLayout Padding="5,5,5,5">
+                                <Label Text="{Binding studentId.firstName}"/>
+                                <Label Text="{Binding studentId.lastName}" />
+                            </StackLayout>
+                        </ViewCell.View>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </StackLayout>
+</ContentPage>

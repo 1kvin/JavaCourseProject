@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="CourseClient.Models.Additor.MarkAdd"
+             Title="Добавить">
+    <ContentPage.Content>
+        <StackLayout Padding="10,10,10,0">
+            <Label x:Name="GroupLabeS" Text="Студент"></Label>
+            <Picker x:Name="GroupPickerStudent" ItemDisplayBinding="{Binding lastName}"></Picker>
+
+            <Label x:Name="GroupLabeP" Text="Преподаватель"></Label>
+            <Picker x:Name="GroupPickerTeacher" ItemDisplayBinding="{Binding lastName}"></Picker>
+
+            <Label x:Name="GroupLabeSub" Text="Предмет"></Label>
+            <Picker x:Name="GroupPickerSubject" ItemDisplayBinding="{Binding name}"></Picker>
+
+            <Label Text="Оценка"></Label>
+            <Entry x:Name="MarkField" Text="" MaxLength="20"></Entry>
+
+            <Button x:Name="SaveButton" Text="Сохранить" Clicked="SaveButton_Clicked"></Button>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
